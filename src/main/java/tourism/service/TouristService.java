@@ -18,16 +18,16 @@ public class TouristService {
         return touristRepository.addTouristAttraction(touristAttraction);
     }
 
-    public void updateAttractionName(String newName, String oldName){
-        touristRepository.updateAttractionName(newName, oldName);
+    public TouristAttraction updateAttractionName(String newName, String oldName){
+        return touristRepository.updateAttractionName(newName, oldName);
     }
 
-    public void updateTouristAttractionDescription(String newDescription, String oldName){
-        touristRepository.updateTouristAttractionDescription(newDescription, oldName);
+    public TouristAttraction updateTouristAttractionDescription(String newDescription, String name){
+        return touristRepository.updateTouristAttractionDescription(newDescription, name);
     }
 
-    public void removeTouristAttraction(String name){
-        touristRepository.removeTouristAttraction(name);
+    public boolean removeTouristAttraction(String name){
+        return touristRepository.removeTouristAttraction(name);
     }
 
     public List<TouristAttraction> getTouristAttractions(){
