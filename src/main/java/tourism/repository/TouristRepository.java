@@ -4,6 +4,7 @@ import org.springframework.stereotype.Repository;
 import tourism.model.TouristAttraction;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @Repository
@@ -16,8 +17,9 @@ public class TouristRepository {
 
     public TouristRepository() {
         touristAttractions = new ArrayList<>();
-        touristAttractions.add(new TouristAttraction("Rundetårn", "A round tower in Copenhagen"));
+        touristAttractions.add(new TouristAttraction("Rundetaarn", "A round tower in Copenhagen"));
         touristAttractions.add(new TouristAttraction("Lille Havfrue", "Mermaid on a stone in Copenhagen"));
+        touristAttractions.add(new TouristAttraction("Tivoli", "Tivoli is the second oldest amusement park in the world"));
     }
 
     public TouristAttraction findTouristAttraction(String name) {
@@ -55,9 +57,11 @@ public class TouristRepository {
     }
 
     public boolean removeTouristAttraction(String name) {
-        for (TouristAttraction touristAttraction : touristAttractions){
-            if (touristAttraction.getName().equalsIgnoreCase(name)){
-                touristAttractions.remove(touristAttraction);
+        Iterator<TouristAttraction> iterator = touristAttractions.iterator();
+        while (iterator.hasNext()) {
+            TouristAttraction touristAttraction = iterator.next();
+            if (touristAttraction.getName().equalsIgnoreCase(name)) {
+                iterator.remove();
                 return true;
             }
         }
