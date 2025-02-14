@@ -8,6 +8,19 @@ body {
         margin-left: 200px;
         margin-right: 200px;
     }
+    h1 {
+        margin: 0;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+        -2px -2px 4px rgba(0, 0, 0, 0.7),
+        2px -2px 4px rgba(0, 0, 0, 0.7),
+        -2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    div {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
 }
 
 header {
@@ -20,19 +33,7 @@ header {
     background-position: center;
 }
 
-h1 {
-    margin: 0;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
-    -2px -2px 4px rgba(0, 0, 0, 0.7),
-    2px -2px 4px rgba(0, 0, 0, 0.7),
-    -2px 2px 4px rgba(0, 0, 0, 0.7);
-}
 
-div {
-    margin-left: 300px;
-    margin-right: 300px;
-}
 
 .square-container {
     display: grid;
@@ -108,11 +109,6 @@ footer {
     min-width: 300px; /* Ensures it stays fixed to the right */
     padding-left: 20px;
     white-space: nowrap; /* Prevents wrapping */
-}
-
-/* Add a vertical separator between contact info and API links */
-.footer-left {
-    border-right: 1px solid #999;
 }
 
 /* Ensure links stay in line */
