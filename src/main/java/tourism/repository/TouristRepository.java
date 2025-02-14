@@ -20,6 +20,9 @@ public class TouristRepository {
         touristAttractions.add(new TouristAttraction("Rundetaarn", "A round tower in Copenhagen"));
         touristAttractions.add(new TouristAttraction("Lille Havfrue", "Mermaid on a stone in Copenhagen"));
         touristAttractions.add(new TouristAttraction("Tivoli", "Tivoli is the second oldest amusement park in the world"));
+        touristAttractions.add(new TouristAttraction("Nyhavn", "A colorful harbor district with historic ships and restaurants"));
+        touristAttractions.add(new TouristAttraction("Christiansborg Palace", "A historic palace housing the Danish Parliament"));
+        touristAttractions.add(new TouristAttraction("Amalienborg", "The royal residence of the Danish monarchy"));
     }
 
     public TouristAttraction findTouristAttraction(String name) {

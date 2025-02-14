@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexCSS.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+
+<header>
+    <h1>Tourist attractions in Copenhagen</h1>
+</header>
+<div style="border-bottom:1px solid #ccc">
+    <p><strong>Copenhagen - the capital that has everything</strong></p>
+    <p>No matter how you look at it, Copenhagen is the center of Denmark. And Copenhagen must be experienced. Denmark's
+        vibrant capital is easy to navigate, and with a bike, S-train, and Metro, you can move around effortlessly
+        through Copenhagen's districts, each with its own unique charm.</p>
+</div>
+
+<ul class="square-container">
+    <li class="square">
+        <img src="Images/rundetaarn.webp" alt="Rundetaarn">
+        <p>Rundetårn - The Round Tower</p>
+    </li>
+    <li class="square">
+        <img src="Images/amalienborg.jpg" alt="Amalienborg">
+        <p>Amalienborg Palace</p>
+    </li>
+    <li class="square">
+        <img src="Images/den-lille-havfrue.jpg" alt="Den-Lille-Havfrue">
+        <p>The Little Mermaid</p>
+    </li>
+    <li class="square">
+        <img src="Images/christiansborg.jpg" alt="Christiansborg">
+        <p>Christiansborg Palace</p>
+    </li>
+    <li class="square">
+        <img src="Images/nyhavn.webp" alt="Nyhavn">
+        <p>Nyhavn - Colorful Harbor</p>
+    </li>
+    <li class="square">
+        <img src="Images/tivoli.jpg" alt="Tivoli">
+        <p>Tivoli Gardens</p>
+    </li>
+</ul>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <strong>Contact Information:</strong> Email: your@email.com | Phone: +45 1234 5678 | Address: Copenhagen, Denmark
+        </div>
+        <div class="footer-right">
+            <strong>API Endpoints:</strong>
+            <a href="http://localhost:8080/attractions" target="_blank">View All Attractions</a> |
+            <a href="http://localhost:8080/attractions/Rundetaarn" target="_blank">Find Attraction by Name</a>
+        </div>
+    </div>
+</footer>
+
+
 
 </body>
 </html>
